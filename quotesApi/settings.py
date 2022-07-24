@@ -77,10 +77,16 @@ WSGI_APPLICATION = 'quotesApi.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+#postgres://sijzmhvfptnvos:3e44135f9c05714045fd275bdf2492395c9a2fa2d66ca46b40eaaff3eee3f288@ec2-3-219-229-143.compute-1.amazonaws.com:5432/dfg4qcg6dt4jon
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dfg4qcg6dt4jon',
+        'HOST': 'ec2-3-219-229-143.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'sijzmhvfptnvos',
+        'PASSWORD': '3e44135f9c05714045fd275bdf2492395c9a2fa2d66ca46b40eaaff3eee3f288',
     }
 }
 
